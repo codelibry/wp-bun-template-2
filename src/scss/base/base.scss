@@ -6,15 +6,18 @@
 //------------------------------------------------------------base styles
 :root {
 	--full-screen: calc(var(--vh, 1vh) * 100);
-
 	--height-header: 10rem;
 	--height-footer: 10rem;
-	--gl-indent: 5rem;
+	--gl-indent: 10rem;
+	--gl-hr-indent: 10rem;
 }
 
 html {
 	height: 100%;
-	font: 400 calc(100vw / 1920 * 10) / 1.33 $font_1;
+	font-weight: 400;
+	line-height: 1.33;
+	font-family: $font_1;
+	// font-size: 16px;
 }
 
 body {
@@ -89,7 +92,7 @@ a {
 // for wp
 
 .editor-styles-wrapper .wp-block {
-	margin-bottom: 5rem;
+	margin-bottom: rem(50);
 }
 html :where(.wp-block) {
 	max-width: 1200px;
@@ -97,6 +100,29 @@ html :where(.wp-block) {
 
 .editor-styles-wrapper {
 	overflow-x: hidden;
+}
+
+.skip-link {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip-path: inset(1px 1px 1px 1px);
+	clip-path: inset(1px, 1px, 1px, 1px);
+}
+
+.skip-link:focus {
+	position: relative;
+	display: inline-block;
+	height: auto;
+	width: auto;
+	overflow: visible;
+	clip-path: none;
+	text-decoration: none;
+
+	padding: var(--gl-hr-indent);
+	background-color: $black;
+	color: $color_link_base;
 }
 
 //------------------------------------------------------------base styles###

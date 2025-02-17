@@ -108,6 +108,7 @@ export class Bundler extends Reporter {
 			renderFn: (filePath) =>
 				sass.compile(filePath, {
 					style: 'compressed',
+					noWarn: true,
 					...this.config.sassConfigOverrides,
 				})?.css,
 		});
