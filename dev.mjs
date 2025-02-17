@@ -41,7 +41,7 @@ bundler.watch({
 	jsDist: `${dist}/js/`,
 	onStart: () => {
 		browserSync.init({
-			proxy: 'http://template-v2/',
+			proxy: 'http://my-theme-name/',
 			port: 3000,
 			open: true,
 			notify: false,
