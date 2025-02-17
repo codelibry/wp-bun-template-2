@@ -1,8 +1,9 @@
 import path from 'path';
 import * as sass from 'sass';
 import fs from 'fs';
-import { Server, Bundler } from 'bun-bundler/modules';
 import browserSync from 'browser-sync';
+// import { Bundler } from 'bun-bundler/modules';
+import { Server, Bundler } from 'bun-bundler/modules';
 
 const debugMode = false;
 const bundler = new Bundler();
@@ -11,22 +12,6 @@ const server = new Server();
 const root = path.resolve('./');
 const dist = path.resolve('./dist');
 const src = path.resolve('./src');
-
-const criticalPath = path.resolve(src, './scss/critical/critical.scss');
-
-const compileCSS = () => {
-	// app
-	const appStyles = path.resolve(src, './scss/app.scss');
-	const result = sass.compile(appStyles, { style: 'compressed' });
-	fs.writeFileSync(path.join(`${dist}/css/`, 'app.css'), result.css);
-
-	// critical
-	if (fs.existsSync(criticalPath)) {
-		console.log('Compiling critical.css...');
-		const criticalResult = sass.compile(criticalPath, { style: 'compressed' });
-		fs.writeFileSync(path.join(`${dist}/css/`, 'critical.css'), criticalResult.css);
-	}
-};
 
 bundler.watch({
 	production: process.env.NODE_ENV === 'production',
@@ -41,11 +26,9 @@ bundler.watch({
 	jsDist: `${dist}/js/`,
 	onStart: () => {
 		browserSync.init({
-			proxy: 'http://my-theme-name/',
+			proxy: 'http://your-theme/',
 			port: 3000,
-			open: true,
-			notify: false,
-			ghostMode: false,
+			// reloadDebounce: 500,
 			files: [
 				`${root}/**/*.php`,
 				`${src}/**/*.js`,
@@ -54,11 +37,20 @@ bundler.watch({
 				`!${dist}/**/*`,
 				`!${root}/helpers/**/*`,
 			],
+			open: true,
+			notify: false,
+			ghostMode: false,
+			// reloadOnRestart: true, // Перезагрузка при перезапуске
 		});
-
-		compileCSS();
 	},
 	onBuildComplete: () => {
-		compileCSS();
+		const criticalPath = path.resolve(src, './scss/critical/critical.scss');
+		if (fs.existsSync(criticalPath)) {
+			const result = sass.compile(criticalPath, { style: 'compressed' });
+			fs.writeFileSync(path.join(`${dist}/css/`, 'critical.css'), result.css);
+		}
+	},
+	onCriticalError: () => {
+		server.stopServer();
 	},
 });
