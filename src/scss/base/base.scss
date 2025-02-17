@@ -6,10 +6,10 @@
 //------------------------------------------------------------base styles
 :root {
 	--full-screen: calc(var(--vh, 1vh) * 100);
-	--height-header: 10rem;
-	--height-footer: 10rem;
-	--gl-indent: 10rem;
-	--gl-hr-indent: 10rem;
+	--height-header: 6.25rem;
+	--height-footer: 6.25rem;
+	--gl-indent: 3.125rem;
+	--gl-hr-indent: 1.25rem;
 }
 
 html {
@@ -92,7 +92,7 @@ a {
 // for wp
 
 .editor-styles-wrapper .wp-block {
-	margin-bottom: rem(50);
+	margin-bottom: 50px;
 }
 html :where(.wp-block) {
 	max-width: 1200px;
