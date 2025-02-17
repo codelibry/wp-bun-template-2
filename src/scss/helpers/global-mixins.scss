@@ -11,8 +11,13 @@ $base-font-size: 16;
 	*
 	* Ex: height: rem(240) // 15rem
 	*/
-@function rem($px) {
-	@return ($px / $base-font-size) + rem;
+@function rem($px, $base-font-size: 16px) {
+	// Проверяем, есть ли у числа единица измерения
+	@if math.is-unitless($px) {
+		$px: $px * 1px; // Добавляем px, если их нет
+	}
+
+	@return math.div($px, $base-font-size) * 1rem;
 }
 
 /*
@@ -21,8 +26,13 @@ $base-font-size: 16;
 	*
 	* Ex: height: em(240) // 15em
 	*/
-@function em($px) {
-	@return ($px / $base-font-size) + em;
+@function em($px, $base-font-size: 16px) {
+	// Проверяем, есть ли у числа единица измерения
+	@if math.is-unitless($px) {
+		$px: $px * 1px; // Добавляем px, если их нет
+	}
+
+	@return math.div($px, $base-font-size) * 1em;
 }
 
 @mixin overflow-text($line) {

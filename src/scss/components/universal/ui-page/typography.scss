@@ -1,0 +1,43 @@
+.ui_typography__font {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: rem(30);
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
+
+.ui_typography__font_item {
+	box-shadow: 0 0 5px 1px rgba($black, 0.2);
+	padding: rem(10);
+
+	&:not(:last-child) {
+		margin-bottom: rem(10);
+	}
+}
+
+.ui_typography__font_block {
+	color: #cecece;
+	font-size: rem(68);
+	line-height: 1;
+
+	&:not(:last-child) {
+		margin-bottom: rem(10);
+	}
+}
+
+.ui_typography__font_name {
+	font-size: rem(20);
+	&:not(:last-child) {
+		margin-bottom: rem(10);
+	}
+}
+
+.ui_typography__font_weights {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	gap: rem(12);
+}

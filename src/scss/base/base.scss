@@ -17,7 +17,7 @@ html {
 	font-weight: 400;
 	line-height: 1.33;
 	font-family: $font_1;
-	// font-size: 16px;
+	font-size: 16px;
 }
 
 body {
@@ -26,7 +26,6 @@ body {
 	display: flex;
 	height: 100%;
 
-	font-size: $font_size_base;
 	color: $color_text_base;
 
 	-webkit-text-size-adjust: none;
