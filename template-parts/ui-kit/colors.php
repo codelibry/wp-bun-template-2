@@ -5,6 +5,7 @@ $list = get_field('ui-color-list');
 
 <section class="ui_colors section">
 	<div class="section_in">
+
 		<h2 class="heading-2 ui_title">
 			Colors
 		</h2>

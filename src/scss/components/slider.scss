@@ -1,0 +1,23 @@
+.slider__card_img_w {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+
+	img {
+		@include cover_img;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+// .slider__dots {
+// 	& .swiper-pagination-bullet {
+// 		background: #a1b;
+// 	}
+
+// 	& .swiper-pagination-bullet-active {
+// 		background: #000;
+// 	}
+// }

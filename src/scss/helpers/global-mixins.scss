@@ -1,5 +1,55 @@
 @use 'sass:math';
 
+/* ===================
+ *  @mixin max-screen
+ * ===================
+ * It is used everywhere
+ * $size - is key from the $breakpoints map `abstracts/_breakpoints.scss`
+ */
+@mixin max-screen($size) {
+	@if map-has-key($breakpoints, $size) {
+		$breakpoint: map-get($breakpoints, $size);
+		@media screen and (max-width: $breakpoint) {
+			@content;
+		}
+	} @else if type-of($size) == 'number' {
+		@if unitless($size) {
+			@error 'when using a number with @max-screen() make sure to include a unit';
+		} @else {
+			@media screen and (max-width: $size) {
+				@content;
+			}
+		}
+	} @else {
+		@error 'the keyword #{$size} is not in the $breakpoints map';
+	}
+}
+
+/* ===================
+ *  @mixin min-screen
+ * ===================
+ * It is used everywhere
+ * $size - is key from the $breakpoints map `abstracts/_breakpoints.scss`
+ */
+@mixin min-screen($size) {
+	@if map-has-key($breakpoints, $size) {
+		$breakpoint: map-get($breakpoints, $size);
+		@media screen and (min-width: $breakpoint) {
+			@content;
+		}
+	} @else if type-of($size) == 'number' {
+		@if unitless($size) {
+			@error 'when using a number with @min-screen() make sure to include a unit';
+		} @else {
+			@media screen and (min-width: $size) {
+				@content;
+			}
+		}
+	} @else {
+		@error 'the keyword #{$size} is not in the $breakpoints map';
+	}
+}
+
 /*
  * Default html font-size (don't change)
  */
@@ -12,11 +62,9 @@ $base-font-size: 16;
 	* Ex: height: rem(240) // 15rem
 	*/
 @function rem($px, $base-font-size: 16px) {
-	// Проверяем, есть ли у числа единица измерения
 	@if math.is-unitless($px) {
-		$px: $px * 1px; // Добавляем px, если их нет
+		$px: $px * 1px;
 	}
-
 	@return math.div($px, $base-font-size) * 1rem;
 }
 
@@ -27,11 +75,9 @@ $base-font-size: 16;
 	* Ex: height: em(240) // 15em
 	*/
 @function em($px, $base-font-size: 16px) {
-	// Проверяем, есть ли у числа единица измерения
 	@if math.is-unitless($px) {
-		$px: $px * 1px; // Добавляем px, если их нет
+		$px: $px * 1px;
 	}
-
 	@return math.div($px, $base-font-size) * 1em;
 }
 

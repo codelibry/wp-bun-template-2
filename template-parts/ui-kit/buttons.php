@@ -1,35 +1,22 @@
-<section class="ui-kit-buttons | section">
-  <h1 class="heading-1">
-    Buttons
-  </h1>
+<?php
 
-  <div class="flex-group | mt-32">
-    <a href="#" class="button">
-      Default Button
-    </a>
+$list = get_field('ui-button-list');
+?>
 
-    <button class="button">
-      Default Button
-    </button>
-  </div>
-
-  <div class="flex-group | mt-32">
-    <a href="#" class="button button--primary">
-      Primary Button
-    </a>
-
-    <button class="button button--primary">
-      Primary Button
-    </button>
-  </div>
-
-  <div class="flex-group | mt-32">
-    <a href="#" class="button button--accent">
-      Accent Button
-    </a>
-
-    <button class="button button--accent">
-      Accent Button
-    </button>
-  </div>
+<section class="ui_btns section">
+	<div class="section_in">
+		<h2 class="heading-2 ui_title">
+			Buttons
+		</h2>
+		<?php if ($list) { ?>
+			<div class="ui_btns__list">
+				<?php foreach ($list as $item) { ?>
+					<div class="ui_btns__item">
+						<a href="#" class='<?php echo $item['class-name'] ?>'> <?php echo $item['class-name'] ?></a>
+					</div>
+				<?php }; ?>
+			</div>
+		<?php }; ?>
+	</div>
+	</div>
 </section>

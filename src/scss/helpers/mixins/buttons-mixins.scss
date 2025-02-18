@@ -20,7 +20,32 @@
 }
 
 //color mixins:
-@mixin btn_style_blue {
+@mixin btn_style_defoult {
+	font-weight: 700;
+	color: $white;
+	background-color: $color_link_base;
+	transition: background-color 0.3s ease;
+
+	@include st_btn;
+
+	&:hover {
+		background-color: darken($color_link_base, 10%);
+	}
+}
+
+@mixin btn_style_primary {
+	font-weight: 700;
+	color: $white;
+	background-color: $primary;
+	transition: background-color 0.3s ease;
+
+	@include st_btn;
+
+	&:hover {
+		background-color: darken($green, 10%);
+	}
+}
+@mixin btn_style_accent {
 	font-weight: 700;
 	color: $white;
 	background-color: $color_link_base;
@@ -35,11 +60,12 @@
 
 //size mixins:
 @mixin btn_size_normal {
-	height: 4rem;
-	padding: 0 1.2rem;
+	height: rem(48);
+	padding: 0 rem(20);
+	min-width: rem(100);
 
-	line-height: 4rem;
-	font-size: 1.6rem;
+	line-height: rem(48);
+	font-size: rem(16);
 
-	border-radius: $gl_radius;
+	border-radius: rem(6);
 }

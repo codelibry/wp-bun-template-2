@@ -1,9 +1,7 @@
 @mixin form_el_checkbox {
 	position: relative;
 
-	padding-left: 3rem;
-
-	font-size: 1.6rem;
+	padding-left: rem(30);
 	color: $black;
 	cursor: pointer;
 
@@ -12,8 +10,8 @@
 		position: absolute;
 		top: -1px;
 		left: 0;
-		width: 2rem;
-		height: 2rem;
+		width: rem(20);
+		height: rem(20);
 		cursor: pointer;
 		content: '';
 	}

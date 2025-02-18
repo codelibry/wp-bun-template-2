@@ -37,6 +37,10 @@ body {
 	@supports (display: grid) {
 		display: block;
 	}
+
+	&.body--popup_open {
+		overflow: hidden;
+	}
 }
 
 .preloader {
@@ -78,16 +82,6 @@ body {
 	flex: 1 0 auto;
 }
 
-a {
-	text-decoration: none;
-	color: $color_link_base;
-
-	&:hover,
-	&:focus {
-		text-decoration: underline;
-	}
-}
-
 // for wp
 
 .editor-styles-wrapper .wp-block {
@@ -125,3 +119,79 @@ html :where(.wp-block) {
 }
 
 //------------------------------------------------------------base styles###
+
+h1,
+.heading-1 {
+	@include h1;
+}
+
+h2,
+.heading-2 {
+	@include h2;
+}
+
+h3,
+.heading-3 {
+	@include h3;
+}
+
+h4,
+.heading-4 {
+	@include h4;
+}
+
+h5,
+.heading-5 {
+	@include h5;
+}
+
+h6,
+.heading-6 {
+	@include h6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	&:not(:first-child) {
+		margin-top: 0.5em;
+	}
+	&:not(:last-child) {
+		margin-bottom: 0.5em;
+	}
+}
+
+ul,
+ol {
+	padding-left: rem(20);
+}
+
+p,
+li {
+	@include text;
+}
+
+p {
+	&:not(:last-child) {
+		margin-bottom: rem(8);
+	}
+}
+
+li {
+	&:not(:last-child) {
+		margin-bottom: rem(4);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $color_link_base;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,92 @@
+.accordion {
+	padding-left: 0;
+}
+
+.accordion__item {
+	list-style-type: none;
+}
+// ----------------------------------------------------------
+
+.accordion__item_body {
+	color: #727272;
+	font-weight: 400;
+
+	// *
+	// important style to work
+	// *
+
+	max-height: 0;
+	opacity: 0;
+
+	transition: all 0.25s ease-out;
+	will-change: max-height;
+	overflow: hidden;
+	pointer-events: none;
+
+	.active-mod & {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	// *
+	// important style to work /
+	// *
+}
+
+// ----------------------------------------------------------
+
+//---------------------------------------------accordion
+.icon {
+	&.size-mod {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.accordion__item_head {
+	@include flex_block(row, nowrap, flex-start, center, center);
+
+	font-size: 1.6rem;
+	font-weight: 700;
+	border-bottom: 1px solid gray;
+	cursor: pointer;
+
+	transition: border-color 0.3s;
+
+	.accordion__item_title {
+		padding-right: 2rem;
+	}
+
+	&:focus,
+	&:hover {
+		color: red;
+	}
+
+	.accordion__item_icon_w {
+		@include flex_block(row, wrap, center, center, center);
+		margin: 0 0 0 auto;
+		width: 1.8rem;
+		height: 0.8rem;
+
+		transform-origin: center;
+		transition: 0.3s;
+		transform: rotateZ(180deg);
+
+		.active-mod & {
+			transform: rotateZ(0deg);
+		}
+	}
+
+	.active-mod & {
+		border-color: transparent;
+	}
+}
+
+.accordion__item_body {
+	font-size: 1.6rem;
+}
+
+.accordion__item_body_in {
+	padding: 0.4rem 0 1rem;
+}

@@ -1,0 +1,35 @@
+.card {
+	display: block;
+	height: 100%;
+	box-shadow: 0 0 rem(10) 1px rgba($black, 0);
+	transition: box-shadow ease 0.4s;
+	color: $color_text_base;
+
+	&:hover {
+		text-decoration: none;
+		color: $color_text_base;
+		box-shadow: 0 0 rem(10) 1px rgba($black, 0.2);
+	}
+}
+
+.card__image_box {
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+
+	img {
+		@include cover_img;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: rem(10);
+	}
+}
+
+.card__info {
+	padding: rem(10);
+}

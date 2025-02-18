@@ -1,0 +1,50 @@
+.tab_nav_list {
+	@include flex_block(row, wrap, flex-start);
+
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.tab_nav_item {
+	padding: rem(5) rem(20);
+
+	border: 1px solid rgba($black, 0.2);
+	border-bottom-color: transparent;
+	cursor: pointer;
+
+	&:not(:first-child) {
+		border-left: 0;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 0;
+	}
+
+	&.active_state {
+		background-color: $white;
+		border-bottom-color: $white;
+		color: red;
+	}
+}
+
+.tab_nav_link {
+	color: inherit;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.tab_content_wrap {
+	margin-top: -1px;
+	padding: rem(20) rem(20);
+	border: 1px solid rgba($black, 0.2);
+}
+
+.tab_content {
+	display: none;
+
+	&.active_state {
+		display: block;
+	}
+}

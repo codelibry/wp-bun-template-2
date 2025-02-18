@@ -1,47 +1,81 @@
-<section class="ui-kit-accordions | section">
-	<h1 class="heading-1">
-		Accordions
-	</h1>
+<section class="section">
+	<div class="section_in">
+		<h2 class="heading-2">
+			Accordions
+		</h2>
 
-	<div class="row | mt-16">
+		<div class="row">
+			<div class="col-4 accordion js-accordion-w col col-4 col-md-8 col-lg-4">
 
-		<div class="col-4 accordion">
-			<div class="accordion__item">
-				<div class="accordion__item_head js-acc-trigger">
-					<h6 class="accordion__item_title">
-						Accordion Title #1
-					</h6>
-					<div class="accordion__item_icon_w">
-						<?php echo get_inline_svg('accordion-icon.svg') ?>
-					</div>
-				</div>
-				<div class="accordion__item_body">
-					<div class="accordion__item_body_in">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-					</div>
-				</div>
+				<ul class="accordion">
+					<li class="accordion__item ">
+						<div class="accordion__item_head js-accordion">
+							<div class="accordion__item_title">accordion item 1
+							</div>
+							<div class="accordion__item_icon_w">+</div>
+						</div>
+						<div class="accordion__item_body">
+							<div class="accordion__item_body_in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dignissimos, aut magnam provident iste laborum at accusantium cupiditate fugiat. Consequatur deleniti maxime voluptas suscipit veritatis fuga sapiente porro temporibus architecto.</div>
+						</div>
+					</li>
+					<li class="accordion__item ">
+						<div class="accordion__item_head js-accordion">
+							<div class="accordion__item_title">accordion item 2
+							</div>
+							<div class="accordion__item_icon_w">+</div>
+						</div>
+						<div class="accordion__item_body">
+							<div class="accordion__item_body_in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dignissimos, aut magnam provident iste laborum at accusantium cupiditate fugiat. Consequatur deleniti maxime voluptas suscipit veritatis fuga sapiente porro temporibus architecto.</div>
+						</div>
+					</li>
+					<li class="accordion__item ">
+						<div class="accordion__item_head js-accordion">
+							<div class="accordion__item_title">accordion item 3
+							</div>
+							<div class="accordion__item_icon_w">+</div>
+						</div>
+						<div class="accordion__item_body">
+							<div class="accordion__item_body_in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dignissimos, aut magnam provident iste laborum at accusantium cupiditate fugiat. Consequatur deleniti maxime voluptas suscipit veritatis fuga sapiente porro temporibus architecto.</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-4 accordion js-accordion-w col col-4 col-md-8 col-lg-4">
+
+				<ul class="accordion">
+					<li class="accordion__item ">
+						<div class="accordion__item_head js-accordion">
+							<div class="accordion__item_title">accordion item 1
+							</div>
+							<div class="accordion__item_icon_w">+</div>
+						</div>
+						<div class="accordion__item_body">
+							<div class="accordion__item_body_in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dignissimos, aut magnam provident iste laborum at accusantium cupiditate fugiat. Consequatur deleniti maxime voluptas suscipit veritatis fuga sapiente porro temporibus architecto.</div>
+						</div>
+					</li>
+					<li class="accordion__item ">
+						<div class="accordion__item_head js-accordion">
+							<div class="accordion__item_title">accordion item 2
+							</div>
+							<div class="accordion__item_icon_w">+</div>
+						</div>
+						<div class="accordion__item_body">
+							<div class="accordion__item_body_in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dignissimos, aut magnam provident iste laborum at accusantium cupiditate fugiat. Consequatur deleniti maxime voluptas suscipit veritatis fuga sapiente porro temporibus architecto.</div>
+						</div>
+					</li>
+					<li class="accordion__item ">
+						<div class="accordion__item_head js-accordion">
+							<div class="accordion__item_title">accordion item 3
+							</div>
+							<div class="accordion__item_icon_w">+</div>
+						</div>
+						<div class="accordion__item_body">
+							<div class="accordion__item_body_in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dignissimos, aut magnam provident iste laborum at accusantium cupiditate fugiat. Consequatur deleniti maxime voluptas suscipit veritatis fuga sapiente porro temporibus architecto.</div>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
-
-		<div class="col-4">
-			<div class="accordion__item">
-				<div class="accordion__item_head">
-					<h6 class="accordion__item_title">
-						Accordion Title #1
-					</h6>
-					<div class="accordion__item_icon_w">
-						<?php echo get_inline_svg('accordion-icon.svg') ?>
-					</div>
-				</div>
-				<div class="accordion__item_body">
-					<div class="accordion__item_body_in">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-					</div>
-				</div>
-			</div>
-		</div>
-
 	</div>
-
 
 </section>
