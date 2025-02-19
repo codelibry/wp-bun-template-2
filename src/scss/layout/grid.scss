@@ -1,9 +1,9 @@
 $breakpoints: (
-	small: 30em,
+	small: 479px,
 	// 480px
-	medium: 48em,
+	medium: 767px,
 	// 768px
-	large: 64em,
+	large: 1023px,
 	// 1024px
 );
 
@@ -30,6 +30,14 @@ $grid-row-gap-small: 16px;
 	flex-wrap: wrap;
 	gap: $grid-column-gap-default; /* Используем gap для отступов */
 
+	&.row--center {
+		justify-content: center;
+	}
+
+	&.row--right {
+		justify-content: flex-end;
+	}
+
 	@include max-screen(large) {
 		gap: $grid-column-gap-large;
 	}
@@ -40,6 +48,13 @@ $grid-row-gap-small: 16px;
 
 	@include max-screen(small) {
 		gap: $grid-column-gap-small;
+	}
+
+	@include bp($point_2, min) {
+	}
+	@include bp($point_3, $point_4) {
+	}
+	@include bp($point_4 - 1) {
 	}
 }
 
