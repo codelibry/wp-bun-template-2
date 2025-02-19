@@ -6,13 +6,8 @@
 
 2. Reload VS Code and install npm packages
    `bun install`
-   `npm i`
 
 3. Let's code!
-
-   in dev.mjs file on line 44 enter name of ur theme
-
-4. Let's code!
 
 - `bun run dev.mjs` - File watching + server
 - `bun run build.mjs` - Build (production mode)
