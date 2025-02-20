@@ -6,10 +6,10 @@
 
 		<div class="row">
 			<div class="col col-4 col-md-8 col-lg-4">
-				<a href="#" class="btn_primary js-popup-trigger-info">popup 1</a>
+				<a href="#" class="button button--primary js-popup-trigger-info">popup 1</a>
 			</div>
 			<div class="col col-4 col-md-8 col-lg-4">
-				<a href="#" class="btn_primary js-popup-trigger-info2">popup 2</a>
+				<a href="#" class="button button--primary js-popup-trigger-info2">popup 2</a>
 			</div>
 
 		</div>

@@ -20,20 +20,7 @@
 }
 
 //color mixins:
-@mixin btn_style_defoult {
-	font-weight: 700;
-	color: $white;
-	background-color: $color_link_base;
-	transition: background-color 0.3s ease;
-
-	@include st_btn;
-
-	&:hover {
-		background-color: darken($color_link_base, 10%);
-	}
-}
-
-@mixin btn_style_primary {
+@mixin btn_style_default {
 	font-weight: 700;
 	color: $white;
 	background-color: $primary;
@@ -45,16 +32,64 @@
 		background-color: darken($green, 10%);
 	}
 }
+
 @mixin btn_style_accent {
 	font-weight: 700;
-	color: $white;
-	background-color: $color_link_base;
-	transition: background-color 0.3s ease;
+	color: $primary;
+	border: 2px solid $primary;
+	background-color: $white;
+	transition: background-color 0.3s ease, color ease 0.3s;
 
 	@include st_btn;
 
 	&:hover {
-		background-color: darken($color_link_base, 10%);
+		background-color: $primary;
+		color: $white;
+	}
+}
+@mixin btn_style_accent_2 {
+	font-weight: 700;
+	background-color: $primary;
+	color: $white;
+	border: 2px solid transparent;
+
+	transition: background-color 0.3s ease, color ease 0.3s, border-color ease 0.3s;
+
+	@include st_btn;
+
+	&:hover {
+		color: $primary;
+		background-color: $white;
+		border-color: $primary;
+	}
+}
+
+@mixin btn_style_accent_3 {
+	font-weight: 700;
+	color: $green_2;
+	background-color: $light_green;
+	transition: background-color 0.3s ease, color ease 0.3s;
+
+	@include st_btn;
+
+	&:hover {
+		background-color: darken($light_green, 10%);
+		color: $white;
+	}
+}
+
+@mixin btn_style_accent_4 {
+	font-weight: 700;
+	color: $white;
+	border: 2px solid $white;
+	background-color: transparent;
+	transition: background-color 0.3s ease, color ease 0.3s;
+
+	@include st_btn;
+
+	&:hover {
+		background-color: $white;
+		color: $primary;
 	}
 }
 
@@ -62,7 +97,7 @@
 @mixin btn_size_normal {
 	height: rem(48);
 	padding: 0 rem(20);
-	min-width: rem(100);
+	min-width: rem(105);
 
 	line-height: rem(48);
 	font-size: rem(16);

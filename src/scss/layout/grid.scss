@@ -1,16 +1,14 @@
 $breakpoints: (
 	small: 479px,
-	// 480px
 	medium: 767px,
-	// 768px
 	large: 1023px,
-	// 1024px
 );
 
-$grid-columns-default: 12;
-$grid-columns-large: 8;
-$grid-columns-medium: 8;
-$grid-columns-small: 4;
+// need add if its need and add var in mixin
+// $grid-columns-default: 12;
+// $grid-columns-large: 8;
+// $grid-columns-medium: 8;
+// $grid-columns-small: 4;
 
 $grid-column-gap-default: 16px;
 $grid-column-gap-large: 16px;
@@ -38,6 +36,10 @@ $grid-row-gap-small: 16px;
 		justify-content: flex-end;
 	}
 
+	&.row--side {
+		justify-content: space-between;
+	}
+
 	@include max-screen(large) {
 		gap: $grid-column-gap-large;
 	}
@@ -48,13 +50,6 @@ $grid-row-gap-small: 16px;
 
 	@include max-screen(small) {
 		gap: $grid-column-gap-small;
-	}
-
-	@include bp($point_2, min) {
-	}
-	@include bp($point_3, $point_4) {
-	}
-	@include bp($point_4 - 1) {
 	}
 }
 

@@ -1,14 +1,28 @@
-.btn {
-	@include btn_style_defoult;
-	@include btn_size_normal;
-}
+.button {
+	@include st_btn;
 
-.btn_primary {
-	@include btn_style_primary;
-	@include btn_size_normal;
-}
+	&.button--primary {
+		@include btn_style_default;
+		@include btn_size_normal;
+	}
 
-.btn_accent {
-	@include btn_style_accent;
-	@include btn_size_normal;
+	&.button--secondary {
+		@include btn_style_accent;
+		@include btn_size_normal;
+	}
+
+	&.button--secondary-2 {
+		@include btn_style_accent_2;
+		@include btn_size_normal;
+	}
+
+	&.button--accent {
+		@include btn_style_accent_3;
+		@include btn_size_normal;
+	}
+
+	&.button--accent-2 {
+		@include btn_style_accent_4;
+		@include btn_size_normal;
+	}
 }
