@@ -8,20 +8,30 @@ $list = get_field('ui-button-list');
 		<h2 class="heading-2 ui_title">
 			Buttons
 		</h2>
-		<?php if ($list) { ?>
-			<div class="ui_btns__list">
 
-				<?php foreach ($list as $item) { ?>
-					<div class="ui_btns__item">
-						<a href="#" class='button <?php echo $item['class-name'] ?>'> <?php echo $item['class-name'] ?></a>
-					</div>
-				<?php }; ?>
+		<div class="ui_btns__list">
 
-				<div class="ui_btns__item">
-					<a href="#" class='button'>simple link button</a>
-				</div>
+			<div class="ui_btns__item">
+				<a href="#" class='button button--primary'>Button primary</a>
 			</div>
-		<?php }; ?>
+
+			<div class="ui_btns__item">
+				<a href="#" class='button button--primary button--outline'>Button primary outline</a>
+			</div>
+
+			<div class="ui_btns__item">
+				<a href="#" class='button button--secondary'>Button secondary</a>
+			</div>
+
+			<div class="ui_btns__item">
+				<a href="#" class='button button--secondary button--outline'>Button secondary outline</a>
+			</div>
+
+			<div class="ui_btns__item">
+				<a href="#" class='button'>simple link button</a>
+			</div>
+		</div>
+
 	</div>
 	</div>
 </section>

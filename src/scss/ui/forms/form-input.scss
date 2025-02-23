@@ -1,7 +1,12 @@
-.form_input__label {
+label {
 	@include form_el_label;
 }
 
-.form_input__element {
+input {
 	@include form_el_default;
+}
+
+input[type='submit'] {
+	color: $white;
+	background-color: var(--wp--preset--color--primary);
 }

@@ -1,0 +1,80 @@
+{
+	"version": 1,
+	"settings": {
+		"color": {
+			"background": false,
+			"link": true,
+			"text": true,
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#1e73be",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#222222",
+					"name": "Secondary"
+				},
+				{
+					"slug": "accent",
+					"color": "#e65f78",
+					"name": "Accent"
+				}
+			]
+		},
+		"typography": {
+			"fontSizes": [
+				{
+					"slug": "body-text",
+					"size": "clamp(16px, 1.2rem, 18px)",
+					"name": "Body text"
+				},
+				{
+					"slug": "heading-1",
+					"size": "clamp(56px, 4.3vw, 72px)",
+					"name": "Heading 1"
+				},
+				{
+					"slug": "heading-2",
+					"size": "clamp(40px, 3.35vw, 56px)",
+					"name": "Heading 2"
+				},
+				{
+					"slug": "heading-3",
+					"size": "clamp(32px, 2.4vw, 40px)",
+					"name": "Heading 3"
+				},
+				{
+					"slug": "heading-4",
+					"size": "clamp(24px, 1.9vw, 32px)",
+					"name": "Heading 4"
+				},
+				{
+					"slug": "heading-5",
+					"size": "clamp(20px, 1.4vw, 24px)",
+					"name": "Heading 5"
+				},
+				{
+					"slug": "heading-6",
+					"size": "clamp(16px, 1.2vw, 20px)",
+					"name": "Heading 6"
+				}
+			],
+			"fontFamilies": [
+				{
+					"slug": "primary",
+					"name": "Primary",
+					"fontFamily": "'Helvetica Neue', sans-serif",
+					"fontWeights": ["300", "400", "500", "600", "700"]
+				},
+				{
+					"slug": "secondary",
+					"name": "Secondary",
+					"fontFamily": "'Arial', sans-serif",
+					"fontWeights": ["400", "700"]
+				}
+			]
+		}
+	}
+}

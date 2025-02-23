@@ -1,6 +1,6 @@
-.button {
+.button,
+input[type='submit'] {
 	@include st_btn;
-
 	&.button--primary {
 		@include btn_style_default;
 		@include btn_size_normal;

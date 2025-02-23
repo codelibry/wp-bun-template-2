@@ -12,6 +12,8 @@
 - `bun run dev.mjs` - File watching + server
 - `bun run build.mjs` - Build (production mode)
 
+4. Start new project with theme.json to setup the variables. This boiletplate will hook them automatically.
+
 ## Template structure
 
 ```

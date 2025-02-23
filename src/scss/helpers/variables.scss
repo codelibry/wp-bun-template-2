@@ -1,6 +1,6 @@
 //---------------------------------------------fonts
 $font_path: '../fonts/';
-$font_1: 'Satoshi', sans-serif;
+$font_1: var(--wp--preset--font-family--primary);
 $font_size_base: rem(16);
 //---------------------------------------------fonts###
 

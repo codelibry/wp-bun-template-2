@@ -1,7 +1,10 @@
 <?php
-
-$list = get_field('ui-typography-list');
+// Get typography settings from theme.json
+$theme_json = json_decode(file_get_contents(get_stylesheet_directory() . '/theme.json'), true);
+$font_sizes = isset($theme_json['settings']['typography']['fontSizes']) ? $theme_json['settings']['typography']['fontSizes'] : [];
+$font_families = isset($theme_json['settings']['typography']['fontFamilies']) ? $theme_json['settings']['typography']['fontFamilies'] : [];
 ?>
+
 
 <section class="ui_typography section">
 	<div class="section_in">
@@ -15,33 +18,31 @@ $list = get_field('ui-typography-list');
 			<div class="ui_typography__col">
 
 				<h3 class="heading-3 ui_sub_title">
-					Fonts
+					Font Families
 				</h3>
-				<?php if ($list) { ?>
+
 					<div class="ui_typography__font">
-						<?php foreach ($list as $item) {
-							$font = $item['font_name'];
-							$weights = $item['weihgts_list'];
+					<?php foreach ($font_families as $item) : 
+							$font = $item['fontFamily'];
+							$weights = $item['fontWeights'];
 						?>
 							<div class="ui_typography__font_item">
 								<div class="ui_typography__font_block" style="font-family: <?php echo $font; ?>">Aa</div>
-								<div class="ui_typography__font_name">Font name: <?php echo $font; ?></div>
+								<div class="ui_typography__font_name" style="font-family: <?php echo $font; ?>">Font name: <?php echo $font; ?></div>
 								<?php if ($weights) { ?>
 
-									<div class="ui_typography__font_weights">
-										<div class="ui_typography__font_weights_item">Weihgts:</div>
-										<?php
-										foreach ($weights as $weight) {
-										?>
-											<div class="ui_typography__font_weights_item"><?php echo $weight['font_weights']; ?>,</div>
-										<?php }; ?>
+									<div class="ui_typography__font_weights" style="font-family: <?php echo $font; ?>">
+										<div class="ui_typography__font_weights_item">Weights:</div>
+										<?php foreach ($weights as $weight) : ?>
+											<div class="ui_typography__font_weights_item"><?php echo $weight; ?>,</div>
+										<?php endforeach; ?>
 									</div>
 								<?php }; ?>
 							</div>
 
-						<?php }; ?>
+							<?php endforeach; ?>
 					</div>
-				<?php }; ?>
+
 			</div>
 			<div class="ui_typography__col">
 				<h3 class="heading-2 ui_sub_title">
@@ -49,12 +50,12 @@ $list = get_field('ui-typography-list');
 				</h3>
 
 				<div class="ui_typography__headings">
-					<h1 class="heading-1">heading-1</h1>
-					<h2 class="heading-2">heading-2</h2>
-					<h3 class="heading-3">heading-3</h3>
-					<h4 class="heading-4">heading-4</h4>
-					<h5 class="heading-5">heading-5</h5>
-					<h6 class="heading-6">heading-6</h6>
+					<h1 class="heading-1">H1 - This is hero text</h1>
+					<h2 class="heading-2">H2 - This is a large heading</h2>
+					<h3 class="heading-3">H3 - This is a standard heading</h3>
+					<h4 class="heading-4">H4 - This is a medium heading</h4>
+					<h5 class="heading-5">H5 - This is a medium heading</h5>
+					<h6 class="heading-6">H6 - This is a small heading</h6>
 				</div>
 
 			</div>
