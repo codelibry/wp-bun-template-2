@@ -39,18 +39,19 @@ bundler.watch({
 		browserSync.init({
 			proxy: 'http://bnk/',
 			port: 3000,
-			// reloadDebounce: 500,
+			injectChanges: true,
 			files: [
+				`${dist}/css/*.css`,
 				`${root}/**/*.php`,
-				`${src}/**/*.js`,
-				`${src}/**/*`,
+				`${src}/js/**/*.js`,
+				// `${src}/**/*`,
 				`!${root}/node_modules/**/*`,
-				`!${dist}/**/*`,
 				`!${root}/helpers/**/*`,
 			],
 			open: true,
 			notify: false,
 			ghostMode: false,
+			reloadDebounce: 100,
 			// reloadOnRestart: true, // Перезагрузка при перезапуске
 		});
 	},
