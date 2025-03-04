@@ -1,5 +1,5 @@
 <section class="ui_cards section">
-	<div class="section_in">
+	<div class="container">
 		<h2 class="heading-2">
 			Cards
 		</h2>

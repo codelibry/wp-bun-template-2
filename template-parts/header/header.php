@@ -11,7 +11,7 @@ $phone = get_field('phone', 'option');
 
 	<!-- Header Top -->
 	<div class="header__top">
-		<div class="section_in">
+		<div class="container">
 			<div class="header__inner">
 				<?php if ($email): ?>
 					<a class="header__link" <?php acf_link_attrs($email) ?>>
@@ -30,7 +30,7 @@ $phone = get_field('phone', 'option');
 	</div>
 	<!-- Header Top End -->
 
-	<div class="section_in">
+	<div class="container">
 		<div class="header__inner">
 			<?php if ($logo): ?>
 				<a class="header__logo" href="<?php echo home_url() ?>">

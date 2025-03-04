@@ -1,0 +1,24 @@
+/**
+ * WordPress Theme Variables
+ * Auto-generated from theme.json
+ */
+
+/**
+ * Available CSS Variables:
+ *  * --wp--preset--color--primary: pink;
+ * --wp--preset--color--secondary: #565656;
+ * --wp--preset--font-family--primary: Instrument Sans Serif;
+ * --wp--custom--border-radius: 20;
+ * --wp--custom--section-padding-y: 120px;
+ * --wp--custom--container-size: 1242px;
+ */
+
+/**
+ * Usage examples:
+ * 
+ * .my-element {
+ *     color: var(--wp--preset--color--primary);
+ *     font-family: var(--wp--preset--font-family--primary);
+ *     padding-top: var(--wp--custom--section-padding-y);
+ * }
+ */

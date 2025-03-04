@@ -1,5 +1,5 @@
 <section class="section js-default-slider-wrapper">
-	<div class="section_in">
+	<div class="container">
 		<h2>default Slider</h2>
 
 		<div class="slider__nav_block">

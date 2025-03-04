@@ -20,5 +20,8 @@
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/jsqrt/bun-bundler.git"
+	},
+	"scripts": {
+		"theme-json-setup": "node scripts/theme-json-setup.mjs"
 	}
 }

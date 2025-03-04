@@ -1,5 +1,5 @@
 <section class="ui_tabs section js-product-tab">
-	<div class="section_in">
+	<div class="container">
 		<h2 class="heading-2 ui_title">
 			Tabs
 		</h2>

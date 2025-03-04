@@ -7,7 +7,7 @@ $font_families = isset($theme_json['settings']['typography']['fontFamilies']) ? 
 
 
 <section class="ui_typography section">
-	<div class="section_in">
+	<div class="container">
 
 		<h2 class="heading-2 ui_title">
 			02 Typography

@@ -4,7 +4,7 @@ $list = get_field('ui-button-list');
 ?>
 
 <section class="ui_btns section">
-	<div class="section_in">
+	<div class="container">
 		<h2 class="heading-2 ui_title">
 			Buttons
 		</h2>

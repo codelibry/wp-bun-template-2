@@ -1,5 +1,5 @@
 <section class="section">
-	<div class="section_in">
+	<div class="container">
 
 		<?php if ( function_exists( 'wpcf7_contact_form' ) ) : ?>
 

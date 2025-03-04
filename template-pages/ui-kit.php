@@ -18,6 +18,22 @@ Template Name: Ui Kit
 
 	<?php get_template_part('/template-parts/ui-kit/form'); ?>
 
+	<?php get_template_part('/template-parts/ui-kit/grid'); ?>
+
+	<?php get_template_part('/template-parts/ui-kit/block-content-wysiwig'); ?>
+
+	<?php get_template_part('/template-parts/ui-kit/breadcrumbs'); ?>
+
+
+	<?php
+	
+	/*
+	get_template_part('/template-parts/ui-kit/duplex-1'); ?>
+
+	<?php get_template_part('/template-parts/ui-kit/content-block-1'); ?>
+
+	<?php get_template_part('/template-parts/ui-kit/content-block-box'); ?>
+
 	<?php
 
 	/*

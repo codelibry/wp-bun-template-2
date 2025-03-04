@@ -12,7 +12,7 @@ $palette_colors = isset($theme_json['settings']['color']['palette']) ? $theme_js
 ?>
 
 <section class="ui_colors section">
-	<div class="section_in">
+	<div class="container">
 
 		<h2 class="heading-2 ui_title">
 			Colors

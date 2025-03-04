@@ -29,7 +29,7 @@ $copyright = get_field('copyright', 'option');
 ?>
 
 <footer class="footer" id="footer">
-	<div class="section_in">
+	<div class="container">
 		<div class="footer__inner">
 			<div class="footer__menu">
 
