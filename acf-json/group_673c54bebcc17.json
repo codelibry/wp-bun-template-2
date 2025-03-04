@@ -19,6 +19,27 @@
             "message": "Hello! Here is quick guide to site settings:\r\n1. You can add\/edit your social media under \"Social Media\" tab\r\n2. You can edit text\/labels for your 404 page under \"404 - Error page\" tab\r\n3. You can add Analytics\/GTM\/Site verification codes and other marketing things under \"Scripts\" tab",
             "new_lines": "wpautop",
             "esc_html": 0
+        },
+        {
+            "key": "field_67bc8c73d319f",
+            "label": "Dev mode?",
+            "name": "dev_mode",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Enable dev mode to add different development things, like output of placeholders for images\/videos etc.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui_on_text": "Enabled",
+            "ui_off_text": "Disabled",
+            "ui": 1
         }
     ],
     "location": [
@@ -39,5 +60,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1732007276
+    "modified": 1740410047
 }
