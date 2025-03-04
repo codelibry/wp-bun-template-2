@@ -16,7 +16,7 @@ html {
 	height: 100%;
 	font-weight: 400;
 	line-height: 1.33;
-	font-family: var(--wp--preset--font-family--primary);;
+	font-family: var(--wp--preset--font-family--primary);
 	font-size: 16px;
 }
 
@@ -150,48 +150,40 @@ h6,
 	@include h6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	&:not(:first-child) {
-		margin-top: 0.5em;
+.article-block {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		&:not(:first-child) {
+			margin-top: 0.5em;
+		}
+		&:not(:last-child) {
+			margin-bottom: 0.5em;
+		}
 	}
-	&:not(:last-child) {
-		margin-bottom: 0.5em;
+
+	ul,
+	ol {
+		padding-left: rem(20);
 	}
-}
 
-ul,
-ol {
-	padding-left: rem(20);
-}
-
-p,
-li {
-	@include text;
-}
-
-p {
-	&:not(:last-child) {
-		margin-bottom: rem(8);
+	p,
+	li {
+		@include text;
 	}
-}
 
-li {
-	&:not(:last-child) {
-		margin-bottom: rem(4);
+	p {
+		&:not(:last-child) {
+			margin-bottom: rem(8);
+		}
 	}
-}
 
-a {
-	text-decoration: none;
-	color: $color_link_base;
-
-	&:hover,
-	&:focus {
-		text-decoration: underline;
+	li {
+		&:not(:last-child) {
+			margin-bottom: rem(4);
+		}
 	}
 }
