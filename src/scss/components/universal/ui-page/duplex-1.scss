@@ -1,0 +1,29 @@
+.duplex__row {
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .duplex__content-wrapper {
+        order: 2;
+    }
+}
+
+.duplex__content-wrapper.right {
+    order: 2;
+}
+
+@media (max-width: 768px) {
+    .duplex__media-wrapper.right {
+        order: 1;
+    }
+}
+
+.duplex__media-wrapper img, .duplex__media-wrapper video {
+    height: auto;
+    width: 100%;
+}
+
+
+.inner-box {
+	padding: 2rem;
+}
