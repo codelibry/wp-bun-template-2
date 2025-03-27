@@ -19,7 +19,7 @@ const directories = {
 	sass: [path.resolve(src, './scss/app.scss')],
 	js: [path.resolve(src, './js/app.js')],
 	images: path.resolve(src, './images/'),
-	fonts: path.resolve(src, './fonts/'),
+	fonts: path.resolve(root, 'assets/fonts/'),
 	statics: path.resolve(src, './static/'),
 
 	dist: dist,
