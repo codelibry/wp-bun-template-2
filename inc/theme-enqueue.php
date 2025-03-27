@@ -32,7 +32,7 @@ function codelibry_enqueue()
 
 	/* Styles */
 	wp_enqueue_style('critical', "{$DIST}/css/critical.css", array(), $style_version, 'all');
-	wp_enqueue_style('modules', "{$DIST}/css/modules/app.css", array(), $style_version, 'all');
+	wp_enqueue_style('modules', "{$DIST}/css/modules/modules.css", array(), $style_version, 'all');
 	wp_enqueue_style('main', "{$DIST}/css/app.css", array(), $style_version, 'all');
 
 
