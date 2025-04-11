@@ -6,6 +6,14 @@ import { Bundler } from 'bun-bundler';
 // import { Bundler } from 'bun-bundler/modules';
 // import { Server, Bundler } from 'bun-bundler/modules';
 
+function getProjectFolderName() {
+	const currentDir = process.cwd();
+	const folderName = path.basename(currentDir);
+	return folderName;
+}
+
+const PROJECT_FOLDER = getProjectFolderName();
+
 const debugMode = false;
 const bundler = new Bundler();
 

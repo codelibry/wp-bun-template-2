@@ -21,7 +21,6 @@ function codelibry_enqueue()
 		$style_version = filemtime("{$ABSOLUTE_DIST}/css/app.css");
 		$custom_version = filemtime("{$ABSOLUTE_DIST}/js/app.js");
 	} else {
-
 		$style_version = '1.0.0';
 		$vendor_version = '1.0.0';
 		$custom_version = '1.0.0';
@@ -43,7 +42,7 @@ function codelibry_enqueue()
 	//wp_enqueue_script( 'lottie-player', "{$LIB}/lottie-player.js", array(), '1.0.0', true );
 
 	// Our Custom JavaScript (should depend on libaries above)
-	wp_enqueue_script('main', "{$DIST}/js/app.js", array('jquery'), $custom_version, true);
+	wp_enqueue_script('main', "{$DIST}/js/app.js", array(), $custom_version, true);
 
 
 	/* Passing PHP variables to JavaScript */
@@ -54,6 +53,7 @@ function codelibry_enqueue()
 		array(
 			'ajax_url' => admin_url('admin-ajax.php'),
 			'ajax_nonce' => wp_create_nonce("secure_nonce_name"),
+			'theme_name' => get_template(),
 			'site_url' => get_site_url(),
 			'theme_url' => get_template_directory_uri()
 		)

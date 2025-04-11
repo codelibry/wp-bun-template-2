@@ -62,7 +62,7 @@
         {
             "key": "field_67f78d5b34418",
             "label": "Label",
-            "name": "video_title_label",
+            "name": "video_label",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -102,7 +102,7 @@
         {
             "key": "field_67f78d6e34419",
             "label": "Description",
-            "name": "video_title_descr",
+            "name": "video_descr",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -317,5 +317,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1744363407
+    "modified": 1744364377
 }

@@ -1,0 +1,25 @@
+.heading_block__title {
+	.text-color-dark & {
+		color: $color_text_dark;
+	}
+	.text-color-light & {
+		color: $color_text_light;
+	}
+}
+.heading_block__descr {
+	.text-color-dark & {
+		color: $color_text_dark;
+	}
+	.text-color-light & {
+		color: $color_text_light;
+	}
+}
+
+.heading_block__label {
+	.text-color-dark & {
+		color: $color_text_dark;
+	}
+	.text-color-light & {
+		color: $color_text_light;
+	}
+}

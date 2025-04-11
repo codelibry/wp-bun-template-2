@@ -1,6 +1,8 @@
 const video = () => {
+	const THEME_NAME = window.codelibry?.theme_name || 'default-theme';
+
 	const loadLargeCSS = () => {
-		const cssPath = '/wp-content/themes/wp-bun-template/assets/style/plyr.css';
+		const cssPath = `/wp-content/themes/${THEME_NAME}/assets/css/plyr.css`;
 
 		if (!document.querySelector(`link[href="${cssPath}"]`)) {
 			const link = document.createElement('link');
@@ -16,7 +18,7 @@ const video = () => {
 	loadLargeCSS();
 
 	const script = document.createElement('script');
-	script.src = '/wp-content/themes/wp-bun-template/assets/js/plyr.js';
+	script.src = `/wp-content/themes/${THEME_NAME}/assets/js/plyr.js`;
 	script.defer = true;
 	script.onload = () => initVideo();
 	document.body.appendChild(script);

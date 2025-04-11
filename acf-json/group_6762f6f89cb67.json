@@ -334,7 +334,7 @@
                         "id": ""
                     },
                     "choices": {
-                        "default": "Default",
+                        "text-color-default": "Default",
                         "text-color-light": "Light",
                         "text-color-dark": "Dark"
                     },
@@ -472,5 +472,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1744362637
+    "modified": 1744392038
 }
