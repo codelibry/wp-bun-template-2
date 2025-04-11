@@ -37,7 +37,7 @@ bundler.watch({
 
 	onStart: () => {
 		browserSync.init({
-			proxy: 'http://bnk/',
+			proxy: 'http://template-v2/',
 			port: 3000,
 			injectChanges: true,
 			files: [

@@ -112,6 +112,38 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_67f789cc26b72": {
+                    "key": "layout_67f789cc26b72",
+                    "name": "video",
+                    "label": "Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_67f78c4026b75",
+                            "label": "Video",
+                            "name": "video",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_67c85beb638b6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -137,5 +169,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1740409805
+    "modified": 1744276571
 }

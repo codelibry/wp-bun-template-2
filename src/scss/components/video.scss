@@ -1,0 +1,19 @@
+.video {
+	background: $green;
+
+	.heading_block__title {
+		color: $white;
+	}
+
+	.plyr__poster {
+		background-size: cover;
+	}
+}
+
+.video__player_w {
+	max-width: rem(994);
+	width: 100%;
+	margin: 0 auto;
+	border-radius: $gl_r_1;
+	overflow: hidden;
+}

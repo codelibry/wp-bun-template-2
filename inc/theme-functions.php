@@ -78,3 +78,37 @@ function disable_gutenberg_for_pages($use_block_editor, $post)
 	return false; // Отключаем Гутенберг для всех остальных типов
 }
 add_filter('use_block_editor_for_post', 'disable_gutenberg_for_pages', 10, 2);
+
+/**
+ * =================================================================
+ * Breadcrumb Icon
+ * =================================================================
+ */
+
+//  function custom_yoast_breadcrumb_separator($separator)
+//  {
+// 	 $icon = '<svg width="100%" height="100%" viewBox="0 0 4 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+//  <path d="M0.730129 0C0.598466 0 0.491491 0.0368078 0.442865 0.0570896C0.338882 0.0999068 0 0.275683 0 0.722634V5.27778C0 5.72474 0.338882 5.90051 0.442865 5.94333C0.546849 5.98615 0.910417 6.10258 1.22461 5.78708L4 3.00021L1.22536 0.213335C1.05854 0.0458219 0.878249 0 0.730129 0Z" fill="white"/>
+//  </svg>';
+// 	 return '<span class="hero__crumbs_separator">' . $icon . '</span>';
+//  }
+//  add_filter('wpseo_breadcrumb_separator', 'custom_yoast_breadcrumb_separator');
+
+/**
+ * =================================================================
+ *  hide post button from admin bar
+ * =================================================================
+ */
+
+function hide_post_type_from_admin()
+{
+
+	remove_menu_page('edit.php');
+
+	function hide_post_type_from_admin_bar($wp_admin_bar)
+	{
+		$wp_admin_bar->remove_node('new-post');
+	}
+	add_action('admin_bar_menu', 'hide_post_type_from_admin_bar', 999);
+}
+add_action('admin_menu', 'hide_post_type_from_admin');

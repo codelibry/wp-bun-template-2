@@ -1,3 +1,4 @@
+import video from './components/video';
 import defoultSlider from './components/default-slider';
 import initPopup from './components/init-popup';
 import Accordion from './components/accordion';
@@ -31,6 +32,7 @@ const app = () => {
 		initPopup('.js-popup-trigger-info2', '.js-popup-info2');
 
 		defoultSlider();
+		video();
 	});
 };
 
