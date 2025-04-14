@@ -52,6 +52,7 @@ body {
 		display: block;
 	}
 
+	&.body--open_menu_state,
 	&.body--popup_open {
 		overflow: hidden;
 	}
