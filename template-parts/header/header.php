@@ -10,27 +10,27 @@ $phone = get_field('phone', 'option');
 <header class="header js-header" id="header">
 
 	<!-- Header Top -->
-	<div class="header__top">
-		<div class="container">
-			<div class="header__inner">
-				<?php if ($email): ?>
-					<a class="header__link" <?php acf_link_attrs($email) ?>>
-						<span class="header__label"><?php _e('E-Mail') ?></span>
-						<span class="header__value"><?php echo $email['title'] ?></span>
-					</a>
-				<?php endif; ?>
-				<?php if ($phone): ?>
-					<a class="header__link" <?php acf_link_attrs($phone) ?>>
-						<span class="header__label"><?php _e('Tel.') ?></span>
-						<span class="header__value"><?php echo $phone['title'] ?></span>
-					</a>
-				<?php endif; ?>
-			</div>
+
+	<div class="container header__top">
+		<div class="header__inner">
+			<?php if ($email): ?>
+				<a class="header__link" <?php acf_link_attrs($email) ?>>
+					<span class="header__label"><?php _e('E-Mail') ?></span>
+					<span class="header__value"><?php echo $email['title'] ?></span>
+				</a>
+			<?php endif; ?>
+			<?php if ($phone): ?>
+				<a class="header__link" <?php acf_link_attrs($phone) ?>>
+					<span class="header__label"><?php _e('Tel.') ?></span>
+					<span class="header__value"><?php echo $phone['title'] ?></span>
+				</a>
+			<?php endif; ?>
 		</div>
 	</div>
+
 	<!-- Header Top End -->
 
-	<div class="container">
+	<div class="container header__bot">
 		<div class="header__inner">
 			<?php if ($logo): ?>
 				<a class="header__logo" href="<?php echo home_url() ?>">

@@ -120,6 +120,28 @@
             "append": ""
         },
         {
+            "key": "field_67fcdbdcfee2c",
+            "label": "Buttons",
+            "name": "video_buttons",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_675c53294d077"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_67c85c594d1c4",
             "label": "Video source",
             "name": "video_source",
@@ -317,5 +339,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1744364377
+    "modified": 1744624645
 }

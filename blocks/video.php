@@ -10,6 +10,9 @@ $poster = get_sub_field('video_poster');
 $video_source = get_sub_field('video_source');
 $video = get_sub_field('video_video');
 
+$button_1 = get_sub_field('button_primary');
+$button_2 = get_sub_field('button_secondary');
+
 $youtube_id = get_sub_field('youtube_id') ?? '';
 $vimeo_id = get_sub_field('vimeo_id') ?? '';
 
@@ -43,11 +46,14 @@ if (!$video && !$youtube_id && !$vimeo_id) {
 		</picture>
 	<?php }; ?>
 
-	<div class="section_in <?php echo $bg['background_image'] ? 'container-relative' : '' ?>">
+	<div class="container <?php echo $bg['background_image'] ? 'container-relative' : '' ?>">
 		<?php if ($label || $title || $descr) { ?>
 			<div class="video__player_heading">
 				<?php render_heading_block($label, $title, $descr); ?>
 			</div>
+		<?php }; ?>
+		<?php if ($button_1 || $button_2) { ?>
+			<?php render_buttons_block($button_1, $button_2, 'video__button_w'); ?>
 		<?php }; ?>
 		<div class="video__player_w">
 			<?php

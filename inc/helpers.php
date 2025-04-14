@@ -16,3 +16,4 @@ require get_template_directory() . '/inc/helpers/get-related-posts.php';
 require get_template_directory() . '/inc/helpers/render-content-wysiwig.php';
 require get_template_directory() . '/inc/helpers/render-block-buttons.php';
 require get_template_directory() . '/inc/helpers/render-block-heading.php';
+require get_template_directory() . '/inc/helpers/render-placeholder.php';

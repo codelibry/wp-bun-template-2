@@ -1,6 +1,6 @@
 <?php
 /*
- * Block: Hero
+ * Block: Hero 1
  */
 
 $label = get_sub_field('hero_1_label');
@@ -34,7 +34,7 @@ if ($bg['background_color']) {
 		</picture>
 	<?php }; ?>
 
-	<div class="section_in container-relative">
+	<div class="container container-relative">
 		<?php if ($label || $title || $descr) { ?>
 			<div class="hero_1__heading_w">
 				<?php render_heading_block($label, $title, $descr, 'hero_1__heading'); ?>
