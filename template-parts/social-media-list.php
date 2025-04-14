@@ -1,37 +1,37 @@
-<?php 
+<?php
 
 /**
  * Quick export from Myhat - not tested yet.
  * Please update the description, after tests with any projects
- * 
+ *
  * For dev: I've added in theme facebook icon only
  */
 
-$socials = get_field('social_media_list','option');
+$socials = get_field('social_media_list', 'option');
 
 if ($socials) : ?>
 
-    <ul class="social-media list-style-none">
+	<ul class="social-media">
 
-        <?php foreach ($socials as $social) : 
-        
-        $socialMedia = $social['social_media'];
-        $socialURL = $social['social_media_url'];
+		<?php foreach ($socials as $social) :
 
-        if ($socialURL) : 
-        ?>
-        <li class="social-media__item">
-          <a href="<?php echo $socialURL;?>" target="_blank">
-            <?php echo get_inline_svg($socialMedia . '.svg');?>
-            <?php echo $socialMedia ?>
-          </a>
-        </li>
-        
+			$socialMedia = $social['social_media'];
+			$socialURL = $social['social_media_url'];
 
-        <?php endif; ?>
+			if ($socialURL) :
+		?>
+				<li class="social-media__item">
+					<a href="<?php echo $socialURL; ?>" target="_blank">
+						<?php echo get_inline_svg($socialMedia . '.svg'); ?>
+						<?php echo $socialMedia ?>
+					</a>
+				</li>
 
-        <?php endforeach; ?>
-        
-    </ul>
+
+			<?php endif; ?>
+
+		<?php endforeach; ?>
+
+	</ul>
 
 <?php endif; ?>

@@ -109,6 +109,7 @@ export class Bundler extends Reporter {
 				sass.compile(filePath, {
 					style: 'compressed',
 					noWarn: true,
+					quietDeps: true,
 					...this.config.sassConfigOverrides,
 				})?.css,
 		});
@@ -130,6 +131,8 @@ export class Bundler extends Reporter {
 				renderFn: (filePath) =>
 					sass.compile(filePath, {
 						style: 'compressed',
+						noWarn: true,
+						quietDeps: true,
 						...this.config.sassConfigOverrides,
 					})?.css,
 			});
@@ -140,6 +143,8 @@ export class Bundler extends Reporter {
 			if (criticalCssFile) {
 				const criticalCssContent = sass.compile(criticalCssFile, {
 					style: 'compressed',
+					noWarn: true,
+					quietDeps: true,
 					...this.config.sassConfigOverrides,
 				})?.css;
 

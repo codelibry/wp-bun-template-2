@@ -66,7 +66,7 @@ bundler.watch({
 	onBuildComplete: () => {
 		const criticalPath = path.resolve(src, './scss/critical/critical.scss');
 		if (fs.existsSync(criticalPath)) {
-			const result = sass.compile(criticalPath, { style: 'compressed' });
+			const result = sass.compile(criticalPath, { style: 'compressed', quietDeps: true });
 			fs.writeFileSync(path.join(`${dist}/css/`, 'critical.css'), result.css);
 		}
 	},
