@@ -34,7 +34,7 @@ if ($bg['background_color']) {
 		</picture>
 	<?php }; ?>
 
-	<div class="container container-relative">
+	<div class="section_in container-relative">
 		<?php if ($label || $title || $descr) { ?>
 			<div class="hero_1__heading_w">
 				<?php render_heading_block($label, $title, $descr, 'hero_1__heading'); ?>

@@ -23,7 +23,9 @@ if ($socials) : ?>
 				<li class="social-media__item">
 					<a href="<?php echo $socialURL; ?>" target="_blank">
 						<?php echo get_inline_svg($socialMedia . '.svg'); ?>
-						<?php echo $socialMedia ?>
+						<span>
+							<?php echo $socialMedia ?>
+						</span>
 					</a>
 				</li>
 

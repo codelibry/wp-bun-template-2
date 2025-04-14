@@ -46,7 +46,7 @@ if (!$video && !$youtube_id && !$vimeo_id) {
 		</picture>
 	<?php }; ?>
 
-	<div class="container <?php echo $bg['background_image'] ? 'container-relative' : '' ?>">
+	<div class="section_in <?php echo $bg['background_image'] ? 'container-relative' : '' ?>">
 		<?php if ($label || $title || $descr) { ?>
 			<div class="video__player_heading">
 				<?php render_heading_block($label, $title, $descr); ?>
