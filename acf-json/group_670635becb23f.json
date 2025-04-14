@@ -3,11 +3,68 @@
     "title": "Block: FAQ",
     "fields": [
         {
-            "key": "field_670635bf19789",
-            "label": "Title",
-            "name": "faq__title",
+            "key": "field_67fd7fda9f08f",
+            "label": "Block heading",
+            "name": "block__heading",
             "aria-label": "",
-            "type": "wysiwyg",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_67f8dc132cb81"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_67fd80649f091",
+            "label": "Section Fields",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_67fd807e9f092",
+            "label": "Content",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_67fd7f3f9f08d",
+            "label": "Label",
+            "name": "faq__label",
+            "aria-label": "",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -17,10 +74,72 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_670635bf19789",
+            "label": "Title",
+            "name": "faq__title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67fd7f5c9f08e",
+            "label": "Description",
+            "name": "faq__description",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
             "tabs": "all",
             "toolbar": "full",
-            "media_upload": 0,
+            "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_67fd802f9f090",
+            "label": "Buttons",
+            "name": "faq__buttons",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_675c53294d077"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         },
         {
             "key": "field_670635f51978b",
@@ -88,6 +207,45 @@
                     "parent_repeater": "field_670635f51978b"
                 }
             ]
+        },
+        {
+            "key": "field_67fd80909f093",
+            "label": "Settings",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_67fd80a99f094",
+            "label": "Background",
+            "name": "faq__background",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_6764394a99279"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         }
     ],
     "location": [
@@ -108,12 +266,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "acfe_display_title": "",
-    "acfe_autosync": [
-        "json"
-    ],
-    "acfe_form": 0,
-    "acfe_meta": "",
-    "acfe_note": "",
-    "modified": 1728461776
+    "modified": 1744669326
 }
