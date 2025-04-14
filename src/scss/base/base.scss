@@ -4,12 +4,26 @@
 @import 'print';
 
 //------------------------------------------------------------base styles
+#wpadminbar {
+	display: none !important;
+}
+html {
+	margin-top: 0 !important;
+}
+
 :root {
 	--full-screen: calc(var(--vh, 1vh) * 100);
-	--height-header: 6.25rem;
 	--height-footer: 6.25rem;
 	--gl-indent: 3.125rem;
-	--gl-hr-indent: 1.25rem;
+
+	@include bp($point_2, min) {
+		--height-header: 10rem;
+		--gl-hr-indent: 2.5rem;
+	}
+	@include bp($point_3) {
+		--height-header: 6.375rem;
+		--gl-hr-indent: 1.25rem;
+	}
 }
 
 html {

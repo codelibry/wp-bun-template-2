@@ -1,6 +1,11 @@
 .social-media {
 	@include flex_block(row, wrap, flex-start, center, center);
 	gap: rem(10);
+	margin-left: auto;
+
+	.mobile-menu__social_w & {
+		margin: auto;
+	}
 }
 
 .social-media__item {

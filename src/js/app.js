@@ -20,6 +20,11 @@ const app = () => {
 			activeStateName: 'active-mod',
 		});
 
+		const subMenu = Accordion({
+			triggers: document.querySelectorAll('.mobile_menu__list .menu-item__parent'),
+			activeStateName: 'active-mod',
+		});
+
 		tabs({
 			wrapper: '.js-product-tab',
 			trigger: '.js-product-tab-trigger',
