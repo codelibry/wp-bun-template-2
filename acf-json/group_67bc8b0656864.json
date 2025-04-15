@@ -3,6 +3,28 @@
     "title": "Block: Content Block 1",
     "fields": [
         {
+            "key": "field_67fe4df5c1b58",
+            "label": "Block Heading",
+            "name": "block_heading",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_67f8dc132cb81"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_67bc8b06579c2",
             "label": "Open wrapper",
             "name": "duplex-1",
@@ -151,7 +173,8 @@
                 "id": ""
             },
             "clone": [
-                "group_67bc88928c556"
+                "field_67bc889246335",
+                "field_67bc88a846336"
             ],
             "display": "seamless",
             "layout": "block",
@@ -198,8 +221,8 @@
     "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1740409901
+    "modified": 1744720455
 }
