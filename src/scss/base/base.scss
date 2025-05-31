@@ -47,6 +47,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 
 	background: $body_bg;
+	background: red;
 
 	@supports (display: grid) {
 		display: block;
