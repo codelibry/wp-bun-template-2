@@ -10,25 +10,20 @@ const dist = path.resolve('./build');
 
 const directories = {
 	src: src,
-	// html: path.resolve(src, './pug/pages/'),
+
 	sass: [path.resolve(src, './scss/app.scss')],
 	js: [path.resolve(src, './js/app.js')],
-	images: path.resolve(src, './images/'),
-	fonts: path.resolve(src, './fonts/'),
-	statics: path.resolve(src, './static/'),
+	// statics: path.resolve(src, './static/'),
 	dist: dist,
-	// htmlDist: dist,
+
 	cssDist: path.resolve(dist, './css/'),
 	jsDist: path.resolve(dist, './js/'),
-	imagesDist: path.resolve(dist, './images/'),
-	spriteDist: path.resolve(dist, './images/sprite'),
 };
 
-const { images, fonts, statics, jsDist } = directories;
+const { jsDist } = directories;
 
 bundler.build({
 	...directories,
-	staticFolders: [images, fonts, statics],
 	production: true,
 
 	onBuildComplete: () => {

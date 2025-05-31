@@ -65,7 +65,7 @@
 				{
 					"slug": "primary",
 					"name": "Primary",
-					"fontFamily": "'Helvetica Neue', sans-serif",
+					"fontFamily": "'Satoshi', sans-serif",
 					"fontWeights": ["300", "400", "500", "600", "700"]
 				},
 				{
