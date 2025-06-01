@@ -160,8 +160,8 @@
 
 	&.plyr__control--overlaid[data-plyr='play'] {
 		padding: 0;
-		width: rem(48) !important;
-		height: rem(54);
+		width: 48px !important;
+		height: 54px;
 
 		&:hover,
 		&:focus {

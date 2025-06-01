@@ -1,6 +1,6 @@
 {
     "key": "group_673970be5dcd1",
-    "title": "Block: Duplex 1",
+    "title": "Block: Duplex old",
     "fields": [
         {
             "key": "field_6762c3cfe71da",
@@ -241,8 +241,8 @@
     "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1744362939
+    "modified": 1748738918
 }
