@@ -360,14 +360,13 @@
                 "id": ""
             },
             "choices": {
-                "left": "Content Left, Media right",
-                "right": "Content Right, Media left"
+                "media-left": "Content Left, Media right",
+                "media-right": "Content Right, Media left"
             },
             "default_value": "",
             "return_format": "value",
             "allow_null": 0,
-            "allow_in_bindings": 0,
-            "layout": "vertical"
+            "layout": "horizontal"
         },
         {
             "key": "field_67bc92912eb0d",
@@ -452,6 +451,29 @@
                     "append": ""
                 }
             ]
+        },
+        {
+            "key": "field_683bab4697338",
+            "label": "Media settings",
+            "name": "media_settings",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "media--image": "Image",
+                "media--video": "Video"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
         }
     ],
     "location": [
@@ -472,5 +494,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1744392038
+    "modified": 1748741469
 }

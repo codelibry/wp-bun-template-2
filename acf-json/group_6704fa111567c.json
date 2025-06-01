@@ -81,38 +81,6 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_67bc81ab09f58": {
-                    "key": "layout_67bc81ab09f58",
-                    "name": "duplex-1",
-                    "label": "Duplex 1",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_67bc81ab09f5a",
-                            "label": "Duplex",
-                            "name": "features",
-                            "aria-label": "",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_673970be5dcd1"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "layout_67fd81ada3b46": {
                     "key": "layout_67fd81ada3b46",
                     "name": "faq",
@@ -208,6 +176,38 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_683ba30743fc6": {
+                    "key": "layout_683ba30743fc6",
+                    "name": "duplex-1",
+                    "label": "Duplex 1",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_683ba31b43fc9",
+                            "label": "Duplex 1",
+                            "name": "duplex-1",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_683ba0bfdcedb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -233,5 +233,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1744667104
+    "modified": 1748738966
 }
